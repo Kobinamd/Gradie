@@ -1,0 +1,236 @@
+        @font-face {
+            font-family: 'Euclid Circular B';
+            src: url('EuclidCircularB-Regular.eot');
+            src: local('Euclid Circular B Regular'), local('EuclidCircularB-Regular'), url('EuclidCircularB-Regular.eot?#iefix') format('embedded-opentype'), url('EuclidCircularB-Regular.woff2') format('woff2'), url('EuclidCircularB-Regular.woff') format('woff'), url('EuclidCircularB-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Euclid Circular B';
+            src: url('EuclidCircularB-Bold.eot');
+            src: local('Euclid Circular B Bold'), local('EuclidCircularB-Bold'), url('EuclidCircularB-Bold.eot?#iefix') format('embedded-opentype'), url('EuclidCircularB-Bold.woff2') format('woff2'), url('EuclidCircularB-Bold.woff') format('woff'), url('EuclidCircularB-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+        * {
+            /* border: 0; */
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url(../background.png);
+            /* background-color: aqua; */
+            /* background-position: center center; */
+            background-size: cover;
+            /* background-repeat: no-repeat; */
+            background-attachment: fixed;
+            font-family: "Euclid Circular B", Arial, sans-serif;
+            line-height: 1.5;
+        }
+        
+        .container {
+            width: 50%;
+            min-width: 750px;
+            height: 450px;
+            /* background-color: #fff; */
+            margin: 150px auto;
+            /* padding-top: 100px; */
+            /* border: solid red 1px; */
+            border-radius: 5px;
+            display: flex;
+            /* margin: 5% 15%; */
+        }
+        /* Image container  */
+        
+        .iphone {
+            width: 50%;
+            background-color: #003333;
+            /* margin: 5%; */
+            height: 450px;
+            /* display: block; */
+            /* float: left; */
+            border-radius: 10px 0 0 10px;
+            /* padding-top: 50px; */
+        }
+        /* form container */
+        
+        .sign {
+            width: 50%;
+            background-color: #FFF;
+            border-radius: 0px 10px 10px 0;
+            /* display: block; */
+            /* float: left; */
+            height: 450px;
+            border: solid 1px #ccc;
+        }
+        
+        .signcon {
+            margin: 10%;
+            width: 75%;
+            /* border: solid red 1px; */
+            padding: 0 20px;
+        }
+        
+        .signcon h2 {
+            color: black;
+            padding-bottom: 25px;
+        }
+        /* Form container ends */
+        /* Design of forms */
+        
+        form div {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .input__group {
+            padding: 10px;
+            border-style: solid;
+            border-radius: 5px;
+            width: 100%;
+        }
+        
+        .check {
+            position: relative;
+        }
+        
+        .check label {
+            display: inline-block;
+            width: 90%;
+            margin-left: 10px;
+        }
+        
+        input.accept {
+            margin-top: 4px;
+            /* display: block; */
+            float: left;
+        }
+        
+        .submit input {
+            padding: 10px 20px;
+            width: 100%;
+            background-color: #003333;
+            color: #fff;
+            border-radius: 5px;
+        }
+        
+        .submit input:hover {
+            border-color: rgb(0, 89, 255);
+            background-color: transparent;
+            color: #003333;
+            cursor: pointer;
+        }
+        
+        small {
+            color: red;
+        }
+        
+        .check a {
+            color: #003333;
+            font-weight: 600;
+        }
+        
+        .check a:hover {
+            text-decoration: none;
+        }
+        /* End of Form design  */
+        /* Phone container design  */
+        
+        .iphonecon {
+            /* margin: 10%; */
+            text-align: center;
+            height: 100%;
+            /* position: relative; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .iphone__text h1 {
+            color: white;
+            padding-bottom: 10px;
+        }
+        
+        .iphone__text {
+            color: #86bfd3;
+            /* border: solid rgb(54, 213, 235) 1px; */
+            height: 20%;
+            margin-top: 10%;
+        }
+        /* .image {
+    width: 100%; 
+    border: solid rgb(54, 213, 235) 1px;
+    position: relative;
+    bottom: 0; 
+    margin-top: 2%;
+    height: 100.0%;
+    width: 100%;
+    background-image: url(../iPhone.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    align-self: flex-end;
+    margin-top: 5%;
+} */
+        
+        img {
+            width: 90%;
+            max-width: 275px;
+            /* min-width: 150px; */
+            /* border: solid red 1px; */
+        }
+        
+        @media (max-width: 800px) {
+            .container {
+                width: 50%;
+                min-width: 375px;
+                margin: 150px auto;
+                display: block;
+            }
+            .iphone {
+                width: 100%;
+                background-color: #003333;
+                height: 450px;
+                border-radius: 10px 10px 0 0;
+            }
+            /* form container */
+            .sign {
+                width: 100%;
+                background-color: #FFF;
+                border-radius: 0px 0 10px 10px;
+                height: 450px;
+                border: solid 1px #ccc;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .container {
+                width: 100%;
+                min-width: 100%;
+                margin: 0 auto;
+                display: block;
+            }
+            .iphone {
+                width: 100%;
+                background-color: #003333;
+                height: 450px;
+                border-radius: 0;
+            }
+            /* form container */
+            .sign {
+                width: 100%;
+                background-color: #FFF;
+                border-radius: 0;
+                height: 450px;
+                border: solid 1px #ccc;
+            }
+        }
